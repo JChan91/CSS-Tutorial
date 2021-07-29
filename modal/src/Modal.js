@@ -6,7 +6,7 @@ function Modal({ open, close, handleText, header, children }) {
 
   const onChange = useCallback((e) => {
     setContent(e.target.value);
-  });
+  }, []);
 
   const onClick = useCallback(() => {
     handleText(content);
@@ -25,7 +25,10 @@ function Modal({ open, close, handleText, header, children }) {
             </button>
           </header>
 
-          <main>{children}</main>
+          <main>
+            {children}
+            <div></div>
+          </main>
 
           <input type="text" value={content} onChange={onChange}></input>
           <input type="button" value="등록" onClick={onClick}></input>

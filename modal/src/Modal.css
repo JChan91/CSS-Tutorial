@@ -2,14 +2,19 @@
   display: none;
   position: fixed;
 
-  top: 0;
+  /* top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
+
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 0px;
 
   z-index: 99;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(209, 33, 33, 0.6);
 }
 
 .modal button {
@@ -58,7 +63,7 @@
   background-color: transparent;
 }
 
-.modal.openModal {
+.openModal.modal {
   display: flex;
   align-items: center;
 
