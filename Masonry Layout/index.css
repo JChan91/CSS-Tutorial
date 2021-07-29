@@ -1,0 +1,29 @@
+#cols-main {
+  width: 900px;
+  margin: 0px auto;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  border: 1px solid coral;
+}
+
+.cols {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  width: 200px;
+  height: 200px;
+
+  margin-top: 5px;
+
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.spec {
+  height: 300px;
+}
