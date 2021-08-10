@@ -1,15 +1,28 @@
 import React from "react";
+import "./Modal.css";
 
 interface modal {
   isModal: boolean;
-  openModal: () => void;
   closeModal: () => void;
 }
 
-function Modal({ isModal, openModal, closeModal }: modal) {
+function Modal({ isModal, closeModal }: modal) {
   return (
-    <div>
-      <button onClick={openModal}>OPEN MODAL</button>
+    <div className={isModal ? "openModal modal" : "modal"}>
+      {isModal ? (
+        <section>
+          <header>
+            MODAL
+            <button className="closeModal" onClick={closeModal}>
+              X
+            </button>
+          </header>
+
+          <main>
+            <div>모달창입니다 :)</div>
+          </main>
+        </section>
+      ) : null}
     </div>
   );
 }

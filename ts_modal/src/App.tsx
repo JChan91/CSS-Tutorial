@@ -18,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <Modal isModal={isModal} openModal={openModal} closeModal={closeModal} />
+      <button onClick={openModal}>MODAL</button>
+      <Modal isModal={isModal} closeModal={closeModal} />
     </div>
   );
 }
